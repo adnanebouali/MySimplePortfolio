@@ -1,8 +1,10 @@
 /* Start global rules  */
 :root {
-  --body-color:#0E0E0E;
+  --body-color: #0e0e0e;
   --sec-color: #151718;
-  --p-main-color: #F1F1F1;
+  --p-main-color: #f1f1f1;
+  --p-sec-color: hsla(0, 0%, 95%, 0.6);
+  --letter-spacing: 1.5px;
 }
 
 * {
@@ -16,9 +18,21 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--p-main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
+h1,
+h2,
+p,
+a {
+  padding: 0;
+  margin: 0;
+}
 /* small */
 @media (min-width: 768px) {
   .container {
@@ -55,3 +69,50 @@ ul {
   margin-right: auto;
 }
 /* End global rules  */
+
+.info {
+  padding: 0;
+  margin: 0;
+}
+.info .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.info .resume {
+  width: 60%;
+}
+.info .resume h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.info .resume h1 span {
+  font-weight: 300;
+}
+.info .resume h2 {
+  padding-top: 3px;
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--p-sec-color);
+  letter-spacing: var(--letter-spacing);
+}
+.info .resume p {
+  padding: 18px 0;
+  font-size: 19px;
+  font-weight: 300;
+  color: var(--p-main-color);
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.5;
+}
+.info .resume .cv {
+  display: inline-block;
+  width: fit-content;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--p-main-color);
+  color: var(--p-main-color);
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.5;
+}
