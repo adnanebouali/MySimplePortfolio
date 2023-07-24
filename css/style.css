@@ -107,10 +107,10 @@ ul {
 .info .resume .cv {
   display: inline-block;
   width: fit-content;
-  padding: 10px;
-  margin: 0;
+  padding: 10px 20px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  text-transform: capitalize;
   border: 1px solid var(--p-main-color);
   color: var(--p-main-color);
   letter-spacing: var(--letter-spacing);
